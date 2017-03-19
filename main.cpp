@@ -10,8 +10,6 @@
 
 using namespace std;
 
-string __AuxiliaryMap[MapHeight];
-
 // store them in vector for convenience
 vector<Castle> CastleModel;
 vector<Warrior> WarriorModel;
@@ -24,12 +22,6 @@ this function is for special initialization rule
 */
 void initialize()
 {
-    // initialize auxiliary map
-    ifstream fin("./AuxiliaryMap.data");
-    for(int i=0;i<MapHeight;i++)
-        getline(fin, __AuxiliaryMap[i]);
-    // end initialize auxiliary map
-    fin.close();
 }
 
 int main()

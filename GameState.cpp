@@ -25,7 +25,7 @@ void GameState::updateState(GameState *PreviousState)
     {
         for(int j=1;j<51;j++) // 51 = MapWidth - 1
         {
-            if(Map.RawMap[0][i][j] == __AuxiliaryMap[i][j]) // if not accessible
+            if(Map.RawMap[0][i][j] == ' ' || Map.RawMap[0][i][j] == '#') // if not accessible
                 continue;
             
             // character found , ...

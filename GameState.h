@@ -23,11 +23,6 @@ public:
 
 };
 
-/*
-use auxiliary map (i.e. only castle and barrier) , so that we can know whether RawMap[i][j] is available
-*/
-extern string __AuxiliaryMap[MapHeight];
-
 class GameState
 {
 public:
