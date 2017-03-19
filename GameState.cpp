@@ -19,6 +19,9 @@ update characters potition and properties
 */
 void GameState::updateState(GameState *PrevState)
 {
+    
+
+/*
     for(int i=1;i<21;i++) // 21 = MapHeight - 1
     {
         for(int j=1;j<51;j++) // 51 = MapWidth - 1
@@ -26,7 +29,8 @@ void GameState::updateState(GameState *PrevState)
             if(Map.RawMap[0][i][j] == ' ' || Map.RawMap[0][i][j] == '#') // if not accessible
                 continue;
             
-            // character found , ...
+            // coding here
         }
     }
+*/
 }
