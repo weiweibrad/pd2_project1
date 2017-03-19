@@ -42,7 +42,7 @@ public:
     /*
     update characters potition and properties
     */
-    void updateState(GameState *PreviousState);
+    void updateState(GameState *PrevState);
 
     GameState()
     {

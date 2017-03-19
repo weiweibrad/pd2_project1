@@ -17,7 +17,7 @@ void GameState::readGameState()
 /*
 update characters potition and properties
 */
-void GameState::updateState(GameState *PreviousState)
+void GameState::updateState(GameState *PrevState)
 {
     for(int i=1;i<21;i++) // 21 = MapHeight - 1
     {

@@ -32,17 +32,20 @@ int main()
     
     // end initialize
 
-    GameState CurrentState;
-    GameState PreviousState;
-    CurrentState.readGameState();
-    
-    // CurrentState.updateState(&PreviousState);
+    GameState* MyCurrentState = new GameState(), OpsCurrentState;
+    GameState* MyPrevState, OpsPrevState;
+    MyCurrentState->readGameState();
 
     while(1)
     {
-        PreviousState = CurrentState;
-        CurrentState.readGameState();
+        delete MyPrevState;
+        MyPrevState = MyCurrentState;
+        MyCurrentState = new GameState();
+        MyCurrentState->readGameState();
+        MyCurrentState->updateState(MyPrevState);
+    
 
-    } 
+        // !! remember to add OpsState transfer
+    }
     return 0;
 }
