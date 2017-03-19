@@ -1,0 +1,6 @@
+CC = g++
+HFILE = 
+CFILE = 
+
+main: main.cpp Character.h Character.cpp GameState.h GameState.cpp GameAI.h GameAI.cpp
+	$(CC) main.cpp GameState.cpp Character.cpp GameAI.cpp -o main --std=c++11
