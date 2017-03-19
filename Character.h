@@ -44,14 +44,13 @@ public:
 class Castle : public CharacterBasis
 {
 public:
+    Point Corner[2];	
     Castle(string _Name, int _ID, int _Cost, int _Speed, int _Attack, int _Range, int _HP) : CharacterBasis(_Name, _ID, _Cost, _Speed, _Attack, _Range, _HP)
     {
     }
     ~Castle()
     {
     }
-
-    Point Corner[2];
 };
 
 
@@ -89,5 +88,10 @@ store character data in a file for flexibility
 5 copies of the same code, only change target object
 */
 void readCharactersData(vector<Castle> &CastleModel, vector<Warrior> &WarriorModel, vector<Priest> &PriestModel);
+
+
+extern vector<Castle> CastleModel;
+extern vector<Warrior> WarriorModel;
+extern vector<Priest> PriestModel;
 
 #endif

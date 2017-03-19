@@ -19,9 +19,7 @@ use auxiliary map (i.e. only castle and barrier) , so that we can know whether R
 (in GameState.h , static string __AuxiliaryMap[MapHeight];)
 update characters potition and properties
 */
-void GameState::updateState(GameState *PreviousState,
-  vector<Castle> &MyCastle, vector<Castle> &OpsCastle, vector<Warrior> &MyWarrior, vector<Warrior> &OpsWarrior,
-  vector<Priest> &MyPriest, vector<Priest> &OpsPriest)
+void GameState::updateState(GameState *PreviousState)
 {
     for(int i=1;i<21;i++) // 21 = MapHeight - 1
     {

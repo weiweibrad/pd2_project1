@@ -5,5 +5,5 @@ alpha-beta pruning
 */
 int abPruning(GameState *MyState, GameState *OpsState, int CountDown, int alpha, int beta)
 {
-
+    return 0;
 }
