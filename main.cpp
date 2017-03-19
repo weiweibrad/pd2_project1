@@ -15,7 +15,6 @@ vector<Castle> CastleModel;
 vector<Warrior> WarriorModel;
 vector<Priest> PriestModel;
 
-GameState CurrentState;
 
 /*
 this function is for special initialization rule
@@ -27,10 +26,13 @@ void initialize()
 int main()
 {
     // initialize
-    readCharactersData(CastleModel, WarriorModel, PriestModel);
-    initialize();
+    readCharactersData();
+
+    // initialize();
+    
     // end initialize
 
+    GameState CurrentState;
     GameState PreviousState;
     CurrentState.readGameState();
     

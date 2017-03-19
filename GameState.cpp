@@ -15,8 +15,6 @@ void GameState::readGameState()
 }
 
 /*
-use auxiliary map (i.e. only castle and barrier) , so that we can know whether RawMap[i][j] is available
-(in GameState.h , static string __AuxiliaryMap[MapHeight];)
 update characters potition and properties
 */
 void GameState::updateState(GameState *PreviousState)

@@ -24,7 +24,7 @@ void CharacterBasis::die()
 store character data in a file for flexibility
 5 copies of the same code, only change target object
 */
-void readCharactersData(vector<Castle> &CastleModel, vector<Warrior> &WarriorModel, vector<Priest> &PriestModel)
+void readCharactersData()
 {
     ifstream fin("./Characters.data");
     string name, str;

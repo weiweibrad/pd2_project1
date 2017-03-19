@@ -87,7 +87,7 @@ public:
 store character data in a file for flexibility
 5 copies of the same code, only change target object
 */
-void readCharactersData(vector<Castle> &CastleModel, vector<Warrior> &WarriorModel, vector<Priest> &PriestModel);
+void readCharactersData();
 
 
 extern vector<Castle> CastleModel;
